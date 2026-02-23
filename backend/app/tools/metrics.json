@@ -1,0 +1,4 @@
+{
+  "total_revenue": "Sum of revenue across orders. SQL: SELECT SUM(revenue) AS total_revenue FROM sales WHERE {filters};",
+  "revenue_by_product": "Total revenue grouped by product. SQL: SELECT product, SUM(revenue) AS total_revenue FROM sales {filters} GROUP BY product;"
+}

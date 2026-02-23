@@ -1,0 +1,25 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+
+# OS and editors
+.DS_Store
+*.sw?
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Local Python venv at repo root
+venv/
+.venv/
+
+# Local DB and build artifacts
+backend/*.db
+.cursor/
+
+# Generated output (keep local only)
+test_report.json
+test_report_*.json

@@ -1,0 +1,19 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local DB (optional; remove if you want to track a seed DB)
+*.db
