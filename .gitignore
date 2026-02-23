@@ -23,3 +23,6 @@ backend/*.db
 # Generated output (keep local only)
 test_report.json
 test_report_*.json
+
+# Local-only doc (not for repo)
+LOCAL_FILES.md

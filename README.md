@@ -66,4 +66,3 @@ See [DOCKER.md](DOCKER.md) for details (stop, reset DB, etc.).
 - **frontend/** — Vite + React, chat UI and chart component
 - **docker-compose.yml** — backend + frontend (nginx) services
 - **DOCKER.md** — Docker run/stop/reset
-- **LOCAL_FILES.md** — List of gitignored files (secrets, local DB) so they are not pushed to the repo
