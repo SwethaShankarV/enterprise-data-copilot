@@ -66,3 +66,24 @@ See [DOCKER.md](DOCKER.md) for details (stop, reset DB, etc.).
 - **frontend/** — Vite + React, chat UI and chart component
 - **docker-compose.yml** — backend + frontend (nginx) services
 - **DOCKER.md** — Docker run/stop/reset
+
+---
+
+## Enterprise Cloud Compatibility
+
+This project is architected with cloud-agnostic abstraction layers to support enterprise deployments on:
+
+- **Azure OpenAI**
+- **Microsoft Fabric SQL Warehouses**
+- **Power BI Semantic Models** (via XMLA / DAX)
+
+For development and evaluation, the system runs locally using SQLite or Postgres.
+
+The following components are provider-abstracted and environment-configurable:
+
+- **LLMClient** → supports OpenAI or Azure OpenAI via environment variables
+- **SQLAdapter** → supports SQLite (dev) and is compatible with Fabric/Azure SQL endpoints
+- **DAXAdapter** → structured for Power BI XMLA/DAX execution
+- **Retriever** → supports metric definition grounding (RAG)
+
+Switching to Azure OpenAI, Fabric SQL endpoints, or Power BI XMLA requires only credential configuration and environment updates — the orchestration and agent architecture remain unchanged.
